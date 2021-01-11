@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        my-first-nuxt-app
+        my-first-nuxt-ap
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        Hello, word
       </h2>
       <div class="links">
         <a
