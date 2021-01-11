@@ -1,23 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        my-first-nuxt-ap
-      </h1>
-      <h2 class="subtitle">
-        Hello, word
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+      <!--  -->
     </div>
   </section>
 </template>
@@ -28,6 +12,12 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  async mounted() {
+    console.log(
+      JSON.stringify(await
+        this.$axios.$get('http://qiita.com/api/v2/items?query=tag:nuxt.js'),true, ' ')
+    )
   }
 }
 </script>
