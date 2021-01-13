@@ -2,6 +2,17 @@
   <section >
     <div>
       <h1> Index page </h1>
+      <div class="daibubun">
+        <div class="sikaku"><p>四角</p></div>
+        <div class="sikaku"><p>四角</p></div>
+        <div class="sikaku"><p>四角</p></div>
+        <div class="sikaku"><p>四角</p></div>
+        <div class="sikaku"><p>四角</p></div>
+        <div class="sikaku"><p>四角</p></div>
+        <div class="sikaku"><p>四角</p></div>
+        
+        
+      </div>
     </div>
   </section>
 </template>
@@ -27,5 +38,19 @@ li + li {
 }
 p {
   margin: 8px 0;
+}
+.daibubun{
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+.sikaku{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  border: solid 1px #000000;
 }
 </style>
